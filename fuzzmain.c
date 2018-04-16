@@ -1,4 +1,9 @@
 /*
+ * mkdir build
+ * cd build
+ * env CC=clang-6.0 CXX=clang++-6.0 CFLAGS=-fsanitize=fuzzer-no-link,address cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/tmp/graphviz -DBUILD_SHARED_LIBS=OFF -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+ * make install
+ * cd ..
  * clang-6.0 -ggdb3 -rpath /tmp/graphviz/lib/ -L /tmp/graphviz/lib/ -I /tmp/graphviz/include/graphviz/ -fsanitize=fuzzer,address -lgvc -lcgraph -lcdt fuzzmain.c
  */
 #include <gvc.h>

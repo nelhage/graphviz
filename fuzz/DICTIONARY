@@ -1,3 +1,8 @@
+lbrack="{"
+rbrack="}"
+lsq="["
+rsq="]"
+quot="\""
 URL="URL"
 arrowhead="arrowhead"
 arrowsize="arrowsize"
